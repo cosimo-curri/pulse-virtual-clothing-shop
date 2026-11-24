@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JSON to CSV</title>
+
+        <script>
+            function res() {
+                const input = document.getElementById("input").value;
+
+                const json = JSON.parse(input);
+
+                const arm_circumference_cm = json.arm_circumference_cm.replace("_tbr", "");
+                const arm_length_cm = json.arm_length_cm.replace("_tbr", "");
+                const chest_circumference_cm = json.chest_circumference_cm.replace("_tbr", "");
+                const leg_length_cm = json.leg_length_cm.replace("_tbr", "");
+                const pelvis_circumference_cm = json.pelvis_circumference_cm.replace("_tbr", "");
+                const shoulder_width_cm = json.shoulder_width_cm.replace("_tbr", "");
+                const thigh_circumference_cm = json.thigh_circumference_cm.replace("_tbr", "");
+                const under_chest_circumference_cm = json.under_chest_circumference_cm.replace("_tbr", "");
+                const upper_arm_length_cm = json.upper_arm_length_cm.replace("_tbr", "");
+                const waist_circumference_cm = json.waist_circumference_cm.replace("_tbr", "");
+                const height = json.height.replace("_tbr", "");
+
+                const result =
+                    arm_circumference_cm + ", " +
+                    arm_length_cm + ", " +
+                    chest_circumference_cm + ", " +
+                    leg_length_cm + ", " +
+                    pelvis_circumference_cm + ", " +
+                    shoulder_width_cm + ", " +
+                    thigh_circumference_cm + ", " +
+                    under_chest_circumference_cm + ", " +
+                    upper_arm_length_cm + ", " +
+                    waist_circumference_cm + ", " +
+                    height;
+
+                document.getElementById("input").value = "";
+                document.getElementById("output").innerText = result;
+            }
+        </script>
+    </head>
+
+    <body>
+        <input type="text" id="input">
+        <button onclick="res()">Convert</button>
+
+        <h1 id="output"></h1>
+    </body>
+</html>

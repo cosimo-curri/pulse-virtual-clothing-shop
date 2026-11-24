@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/IntroductionScene.unity
+    guid: 619926446e450664f85106b212c9908d
+  - enabled: 1
+    path: Assets/Scenes/LoginScene.unity
+    guid: e09cc59b6213698408f7328bf7315c4f
+  - enabled: 1
+    path: Assets/Scenes/RegistrationScene.unity
+    guid: dfa975e57c620bd4d8abcebb25d5c85b
+  - enabled: 1
+    path: Assets/Scenes/RestorePasswordScene.unity
+    guid: eb9771b59ae80d440a3228cc1753594c
+  - enabled: 1
+    path: Assets/Scenes/ShopSelectScene.unity
+    guid: e872e998d6f76d1458f87a03f888c213
+  - enabled: 1
+    path: Assets/Scenes/ProgressBarScene.unity
+    guid: eccca6a336c25464eaf11bbc826e56d2
+  - enabled: 1
+    path: Assets/Scenes/ChooseAvatarScene.unity
+    guid: b630452d3a59c9643a035a9a82a0546f
+  - enabled: 1
+    path: Assets/Scenes/AvatarCreationScene.unity
+    guid: ccf09bf84a0347c4b817a19ec2bde8fc
+  - enabled: 1
+    path: Assets/Scenes/Negozio/Negozio - Entrata.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/CartScene.unity
+    guid: ab531adbb7ca62846b5dd309958daba9
+  - enabled: 1
+    path: Assets/Scenes/SettingsScene.unity
+    guid: 04d508d677a499f4e8ddc7427dca5903
+  - enabled: 1
+    path: Assets/Scenes/CashierScene.unity
+    guid: 3498a61c15f4af84c920b05a13c1fe13
+  - enabled: 1
+    path: Assets/Scenes/Camerino/Camerino - 1.unity
+    guid: 03797729fbb9de44595e9eeb6a5d659a
+  - enabled: 1
+    path: Assets/Scenes/Camerino/Camerino - 2.unity
+    guid: 7727d41b9b0f2ee4299b57ea4ae247e6
+  - enabled: 1
+    path: Assets/Scenes/CatalogScene.unity
+    guid: c1ede1ef0a1ae8a4a8362a387f09a684
+  m_configObjects: {}

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+
+html, body {
+    background-color: #11151C;
+    font-family: "Montserrat", "Sans-Serif";
+    margin: 0px;
+    letter-spacing: 0.5px;
+}
+
+::placeholder {
+    font-family: "Montserrat", "Sans-Serif";
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0px 10px 0px 10px;
+    font-size: 40px;
+    color: #FF9358;
+    text-align: center;
+}
+
+p {
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
+    color: #687DC1;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.07);
+    font-family: "Montserrat", "Sans-Serif";
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+    font-size: 15px;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+#changePasswordForm {
+    color: white;
+
+    .password-container {
+        width: 320px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        span {
+            margin-left: 10px;
+            text-align: right;
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    #label-password2 {
+        margin-top: 30px;
+    }
+
+    span {
+        cursor: pointer;
+        user-select: none;
+        font-weight: bolder;
+        margin-left: 5px;
+        transition: color 0.5s ease;
+    }
+
+    span:hover {
+        color: #C5C5C5;
+    }
+
+    button {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 300px;
+        font-size: 15px;
+        font-family: "Montserrat", "Sans-Serif";
+        width: 320px;
+        margin-top: 30px;
+        cursor: pointer;
+        font-weight: bold;
+        color: black;
+        background-color: #FF9358;
+        transition: background-color 0.5s ease;
+    }
+
+    button:hover {
+        background-color: #C36E3C;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        height: fit-content;
+        margin-top: 100px;
+    }
+}

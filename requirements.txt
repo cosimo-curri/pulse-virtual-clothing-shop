@@ -1,0 +1,9 @@
+# Python dependencies shared by the standalone experiments and the backend's Python bridge.
+# Install compatible packages in a dedicated Python environment.
+# NumPy provides the numerical processing, scikit-learn the regression models,
+# Matplotlib provides image processing/plotting, and Pillow provides
+# PNG generation and validation in local tests.
+numpy
+scikit-learn
+matplotlib
+Pillow

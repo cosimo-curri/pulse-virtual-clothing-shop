@@ -1,0 +1,106 @@
+.SignUpContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 100px 0px 100px;
+
+    h3 {
+        margin: 0px;
+        font-size: 40px;
+        color: var(--orange-shade);
+    }
+
+    p {
+        margin: 0px 0px 30px 0px;
+        font-size: 20px;
+        color: var(--blue-shade);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input {
+        margin: 0px 0px 30px 0px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.07);
+        border-radius: 5px;
+        border: none;
+        width: 300px;
+        font-size: 15px;
+        color: white;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    span {
+        margin: 0px 0px 30px 0px;
+        cursor: pointer;
+        user-select: none;
+        font-weight: bolder;
+        transition: color 0.5s ease;
+    }
+
+    span:hover {
+        color: var(--hover);
+    }
+
+    .password-container {
+        width: 320px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        span {
+            margin-left: 10px;
+            text-align: right;
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+
+    button {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+        font-family: "Montserrat", "Sans-Serif";
+        width: 320px;
+        margin-top: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        color: black;
+        background-color: var(--orange-shade);
+        transition: background-color 0.5s ease;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    button:hover {
+        background-color: var(--orange-shade-dark);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .SignUpContainer {
+        height: fit-content;
+        margin-top: 100px;
+
+        span:hover {
+            color: var(--text-color);
+        }
+
+        button:hover {
+            background-color: var(--orange-shade);
+        }
+    }
+}

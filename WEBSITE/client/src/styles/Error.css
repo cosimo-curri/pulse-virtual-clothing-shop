@@ -1,0 +1,27 @@
+.ErrorContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        margin: 0px;
+        font-size: 40px;
+        color: #FF9358;
+    }
+    
+    p {
+        margin: 0px 10px 0px 10px;
+        font-size: 20px;
+        color: #687DC1;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ErrorContainer {
+        height: fit-content;
+        margin-top: 100px;
+    }
+}

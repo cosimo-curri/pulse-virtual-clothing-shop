@@ -1,0 +1,114 @@
+.VirtualAssistantContainer {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../public/images/virtualAssistantBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    canvas {
+        height: 100vh;
+        cursor: grab;
+    }
+
+    a {
+        left: 20px;
+    }
+
+    .UIContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+
+        textarea {
+            margin-bottom: 20px;
+            width: 480px;
+            height: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-family: "Montserrat", "Sans-Serif";
+            background-color: rgba(255, 255, 255, 0.5);
+            overflow-y: auto;
+            resize: none;
+        }
+
+        textarea::placeholder {
+            color: black;
+        }
+
+        textarea:focus {
+            outline: none;
+        }
+
+        #input-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 500px;
+
+            input {
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 5px;
+                border: none;
+                width: 300px;
+                font-size: 15px;
+                color: black;
+            }
+    
+            input::placeholder {
+                color: rgb(60, 60, 60);
+            }
+    
+            input:focus {
+                outline: none;
+            }
+    
+            button {
+                width: 80px;
+                margin-left: 10px;
+                border-radius: 5px;
+                border: none;
+                font-family: "Montserrat", "Sans-Serif";
+                cursor: pointer;
+                background-color: whitesmoke;
+                transition: background-color 0.5s ease;
+            }
+    
+            button:disabled {
+                background-color: #B1B1B1;
+                color: black;
+            }
+    
+            button:hover {
+                background-color: #B1B1B1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .VirtualAssistantContainer {
+        .UIContainer {
+            textarea {
+                width: calc(80% - 20px);
+            }
+
+            #input-container {
+                width: 80%;
+
+                button {
+                    color: black;
+                }
+    
+                button:hover {
+                    background-color: whitesmoke;
+                }
+            }
+        }
+    }
+}

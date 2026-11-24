@@ -1,0 +1,232 @@
+.HumanAcquisitionContainer {
+    #image-loading {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+
+    #photo-container {
+        video, canvas {
+            width: 256;
+            height: 256;
+            border-radius: 20px;
+            position: absolute;
+            margin: auto;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            text-align: "center";
+            z-index: 9;
+            scale: 2;
+        }
+    }
+
+    #h1-countdown {
+        position: absolute;
+        font-size: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 450px;
+        margin: 0px;
+        z-index: 10;
+    }
+
+    #button-take-photo {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        top: 360px;
+        bottom: 0px;
+        z-index: 11;
+        cursor: pointer;
+        transition: scale 0.5s ease;
+    }
+
+    #button-take-photo:hover {
+        scale: 1.2;
+    }
+
+    h3 {
+        display: none;
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 0px;
+        color: var(--orange-shade);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    #refresh-button {
+        top: 60px;
+    }
+
+    #info-button {
+        top: 100px;
+    }
+
+    #text-hint {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 10px;
+    }
+
+    #hint1, #hint2 {
+        color: var(--orange-shade);
+    }
+
+    #human-hint {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        height: 350px;
+        z-index: 10;
+        opacity: 0.5;
+    }
+
+    .HumanAcquisitionManageResultsContainer {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--background-color);
+        z-index: 11;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        #button-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            margin: 0px;
+            font-size: 40px;
+        }
+
+        #info-container {
+            margin-top: 150px;
+            width: 280px;
+            padding: 20px 20px 10px 20px;
+            border: 2px solid var(--orange-shade);
+            border-radius: 10px;
+
+            #info-container-title {
+                font-size: 25px;
+                margin: 0px;
+                font-weight: bolder;
+                color: var(--orange-shade);
+            }
+
+            ul {
+                margin-bottom: 0px;
+
+                li {
+                    margin-bottom: 10px;
+
+                    span {
+                        color: var(--orange-shade);
+                        text-decoration: underline;
+                    }
+
+                    p {
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                margin: 0px 0px 20px 0px;
+                color: var(--orange-shade);
+            }
+
+            input {
+                margin: 0px 0px 30px 0px;
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0.07);
+                border-radius: 5px;
+                border: none;
+                width: 300px;
+                font-size: 15px;
+                color: white;
+            }
+        
+            input:focus {
+                outline: none;
+            }
+
+            button {
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                font-size: 15px;
+                font-family: "Montserrat", "Sans-Serif";
+                width: 320px;
+                margin: 10px 0px 100px 0px;
+                cursor: pointer;
+                font-weight: bold;
+                color: black;
+                background-color: var(--orange-shade);
+                transition: background-color 0.5s ease;
+        
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        
+            button:hover {
+                background-color: var(--orange-shade-dark);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .HumanAcquisitionContainer {
+        #photo-container,
+        #image-loading,
+        #button-take-photo,
+        #h1-countdown,
+        #text-hint,
+        #human-hint {
+            display: none;
+        }
+
+        .HumanAcquisitionManageResultsContainer {
+            form {
+                button:hover {
+                    background-color: var(--orange-shade);
+                }
+            }
+        }
+
+        h3 {
+            display: block;
+        }
+    }
+}

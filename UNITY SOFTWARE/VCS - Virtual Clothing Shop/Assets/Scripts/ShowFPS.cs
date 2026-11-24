@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class ShowFPS : MonoBehaviour
+{
+    public float timer, refresh, avgFramerate;
+    public string display = "{0} FPS";
+    public TMP_Text fps;
+
+    void Start()
+    {}
+
+    void Update()
+    {
+        float timelapse = Time.smoothDeltaTime;
+        timer = timer <= 0 ? refresh : timer -= timelapse;
+
+        if(timer <= 0)
+            avgFramerate = (int) (1f / timelapse);
+
+        fps.text = string.Format(display, avgFramerate.ToString());
+    }
+}

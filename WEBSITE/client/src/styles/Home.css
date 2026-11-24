@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.HomeContainer {
+    .canvas-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    
+    .headline-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        pointer-events: none;
+    }
+    
+    #text-behind, #text-front, #text-behind-blur {
+        font-family: "Roboto", "Sans-Serif";
+        position: absolute;
+        text-align: center;
+        font-size: clamp(24px, 20vw, 200px);
+        font-weight: 800;
+        letter-spacing: 10px;
+        line-height: 0.8;
+    }
+    
+    #text-behind {
+        color: var(--text-color);
+        z-index: 1;
+    }
+    
+    #text-behind-blur {
+        color: var(--text-color);
+        filter: blur(7.5px);
+        -webkit-filter: blur(7.5px);
+        z-index: 0;
+    }
+    
+    #text-front {
+        color: transparent;
+        -webkit-text-stroke: 2px var(--text-color);
+        z-index: 3;
+    }
+    
+    .visible {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .invisible {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    #signup-button {
+        top: 60px;
+    }
+}
