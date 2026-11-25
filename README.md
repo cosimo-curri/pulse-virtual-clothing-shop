@@ -6,7 +6,7 @@ The project explores a practical alternative to generating a complete garment me
 
 ## Academic Context and Project Background
 
-The original **VCS — Virtual Clothing Shop** was developed at **[Politecnico di Bari](https://www.poliba.it/en/ingegneria-informatica-e-dellautomazione)** as part of the **Bachelor's Degree in Computer and Automation Engineering**, for the *Software Engineering and Web Fundamentals* course (**Software Engineering module**, Academic Year **2022–2023**), through a university project undertaken in collaboration with [Accenture](https://www.accenture.com/).
+The original **VCS — Virtual Clothing Shop** was developed at **[Politecnico di Bari](https://www.poliba.it/en/ingegneria-informatica-e-dellautomazione)** as part of the **Bachelor's Degree in Computer Science and Automation Engineering**, for the *Software Engineering and Web Fundamentals* course (**Software Engineering module**, Academic Year **2022–2023**), through a university project undertaken in collaboration with [Accenture](https://www.accenture.com/).
 
 The system was subsequently extended as **Pulse** at **[Politecnico di Bari](https://www.poliba.it/en/laurea-magistrale-ingegneria-informatica)** as part of the **Master's Degree in Computer Engineering**, **Artificial Intelligence and Data Science** curriculum, for the *Software Architecture and Pattern Design* and *Statistical and Mathematical Methods for Artificial Intelligence* courses (Academic Year **2023–2024** for both). These stages share a codebase but have distinct contributors and technological emphases. The Accenture collaboration concerns the original VCS project, not an asserted formal partnership for every subsequent Pulse feature.
 
